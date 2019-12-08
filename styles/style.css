@@ -83,7 +83,7 @@ body {
 .showcase {
   grid-area: showcase;
   min-height: 530px;
-  background: url(/images/first.jpg);
+  background: url(../images/first.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
