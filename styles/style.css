@@ -83,7 +83,7 @@ body {
 .showcase {
   grid-area: showcase;
   min-height: 530px;
-  background: url(./images/first.jpg);
+  background: url(/images/first.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -117,7 +117,7 @@ body {
   justify-items: center;
 }
 .info-img {
-  background: url(./images/info.jpg);
+  background: url(images/info.jpg);
   background-size: cover;
   background-position: center;
   min-height: 300px;
