@@ -125,6 +125,7 @@ body {
   height: auto;
   width: 100%;
   max-width: 620px;
+  min-width: 300px;
 }
 .info h1 {
   grid-area: h1;
