@@ -83,7 +83,7 @@ body {
 .showcase {
   grid-area: showcase;
   min-height: 530px;
-  background: url(../images/first.jpg);
+  background: url(../images/main.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -93,18 +93,19 @@ body {
   box-shadow: var(--shadow);
   opacity: 0.9;
 }
-.showcase h1 {
+/* #title {
   font-size: 4rem;
   margin-bottom: 0;
   color: var(--light);
   opacity: 1;
+  z-index: 5;
 }
 .showcase p {
   font-size: 1.3rem;
   margin-top: 0;
   color: var(--light);
   opacity: 1;
-}
+} */
 .info {
   margin: 0 10px;
   background: var(--primary);
@@ -117,7 +118,7 @@ body {
   justify-items: center;
 }
 .info-img {
-  background: url(../images/info.jpg);
+  background: url(../images/robo.jpg);
   background-size: cover;
   background-position: center;
   min-height: 300px;
