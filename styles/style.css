@@ -21,10 +21,10 @@ body {
 .main-nav ul {
   display: grid;
   padding: 0;
-  grid-gap: 0px;
+  grid-gap: 5px;
   list-style: none;
   align-items: center;
-  grid-template-columns: 2fr 0.8fr 0.8fr 0.8fr 0.8fr 1.4fr;
+  grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr 0.8fr 1.4fr;
   background: var(--dark);
   min-height: 70px;
 }
@@ -43,6 +43,11 @@ body {
 .main-nav a:hover {
   color: var(--orange);
   font-size: 1.2rem;
+}
+.main-nav img {
+  width: 200px;
+  margin: 0;
+  padding: 0;
 }
 .icons {
   display: grid;
@@ -125,7 +130,6 @@ body {
   height: auto;
   width: 100%;
   max-width: 620px;
-  min-width: 300px;
 }
 .info h1 {
   grid-area: h1;
@@ -351,6 +355,9 @@ body {
   .main-nav a:hover {
     font-size: 0.9rem;
   }
+  #mainlogo {
+    background: white;
+  }
   .empty-one {
     display: none;
   }
@@ -373,5 +380,22 @@ body {
   .phone {
     grid-column: 2/5;
     padding: 1.5rem 2rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 655px) {
+  .main-nav ul {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    background: var(--primary);
+    margin: 0 10px;
+  }
+  .main-nav a {
+    background: var(--dark);
+  }
+  .main-nav a:hover {
+    font-size: 0.9rem;
+  }
+  #mainlogo {
+    background: white;
   }
 }
