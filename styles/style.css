@@ -355,13 +355,9 @@ body {
 .contact {
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  grid-gap: 10px;
   margin: 50px 0;
 }
-#map {
-  height: 500px;
-  width: 100%;
-}
+
 /* Contact page */
 @media (max-width: 950px) {
   .icons {
