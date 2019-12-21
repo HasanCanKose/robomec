@@ -298,6 +298,71 @@ body {
 .copy-right strong {
   color: var(--orange);
 }
+/* About page */
+.about {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-gap: 10px;
+  margin: 50px 0;
+}
+.mid {
+  display: grid;
+  grid-template-areas:
+    "aboutcontent aboutcontent"
+    "mission vision";
+  grid-gap: 15px;
+  word-spacing: -2px;
+}
+.mid h1 {
+  text-align: center;
+}
+.mid p {
+  text-indent: 40px;
+}
+.aboutcontent {
+  grid-area: aboutcontent;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: large;
+  line-height: xx-large;
+  text-align: justify;
+}
+.mission {
+  grid-area: mission;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: large;
+  line-height: xx-large;
+  text-align: justify;
+}
+.vision {
+  grid-area: vision;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: large;
+  line-height: xx-large;
+  text-align: justify;
+}
+/* About page */
+/* Contact page */
+
+.contact {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-gap: 10px;
+  margin: 50px 0;
+}
+#map {
+  height: 500px;
+  width: 100%;
+}
+/* Contact page */
 @media (max-width: 950px) {
   .icons {
     margin: 0;
@@ -310,6 +375,12 @@ body {
   }
   .fa:hover {
     font-size: 20px;
+  }
+  .mid {
+    grid-template-areas:
+      "aboutcontent"
+      "mission"
+      "vision";
   }
 }
 @media (max-width: 770px) {

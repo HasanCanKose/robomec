@@ -56,62 +56,30 @@
       <section class="top-container">
         <header class="showcase"></header>
       </section>
-      <section class="about">
-        <div class="left"></div>
-        <div class="mid">
-          <div class="aboutcontent">
-            <h1>ROBOMEC</h1>
-            <br />
-            <p>
-              ROBOMEC; sektörün farklı alt dallarında 10 yılı bulan tecrübe ve
-              bilgi birikimine sahip ekibimizin, 2017 yılında bir araya gelmesi
-              ile teknopark bünyesinde kurulmuştur. Plastik ambalaj imalatı
-              sektörüne robotlu otomasyon hizmeti verme misyonuyla yola çıkan
-              firmamız, “From Raw Material To Final Product” sloganıyla plastik
-              enjeksiyon, şişirme, injection&blow ve termoform makineleri ile
-              entegre çalışan; Kalıp İçi Etiketleme (IML-BML), Ürün Alma (Take
-              Out), Çapak Kırma, Kulp Çakma, Sağlam-Sakat Testi, Kamera Kontrol,
-              Paketleme-Paletleme gibi müşteriye özel robotik sistemler
-              kurmaktadır.
-            </p>
-            <br />
-            <p>
-              Firma politikası olarak müşteri memnuniyeti her daim ön planda
-              tutulduğundan, tüm Ar-Ge çalışmalarımız sektörel tecrübelerimiz
-              sonucunda elde ettiğimiz müşteri beklentileri yönünde olmaktadır.
-              Bu hususta en kaliteli kompanentlerin kullanımıyla hassas imalat
-              ve montaj tekniklerimizi harmanlayarak sektörün en kompakt ve
-              verimli robotik sistemlerini müşterilerimizle buluşturuyoruz.
-            </p>
-            <br />
-            <p>
-              Genç ve dinamik yapısı içerisine sığdırdığı yüksek bilgi birikimi
-              ve tecrübeye sahip mühendis kadrosuyla ROBOMEC, sektöründe
-              müşterilerine yüksek mühendislik ürünü robotik sistemleriyle
-              ayrıcalık kazandırmaya devam etmektedir.
-            </p>
-          </div>
-          <div class="mission">
-            <h1>Misyon</h1>
-            <br />
-            <p>
-              Plastik ambalaj imalatı sektörüne yönelik yenilikçi ve yüksek
-              verimlilikte robotlu otomasyon sistemlerini projelendirmek ve
-              hayata geçirmek; satış öncesi ve sonrası hizmetlerimizle üst düzey
-              müşteri memnuniyeti oluşturmak.
-            </p>
-          </div>
-          <div class="vision">
-            <h1>Vizyon</h1>
-            <br />
-            <p>
-              Dünya genelinde plastik makine ve ambalaj imalatı sektörlerine
-              hizmet veren robotlu otomasyon firmaları arasında en yenilikçi ve
-              rekabetçi firmalardan biri olmak.
-            </p>
-          </div>
+      <section class="contact">
+        <div class="left-contact"></div>
+        <div class="mid-contact">
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var location = { lat: 41.019046, lng: 28.890747 };
+              var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location
+              });
+              var marker = new google.maps.Marker({
+                position: location,
+                map: map
+              });
+            }
+          </script>
+          <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnbcBLq2MLbTGn08z78lwbj_Cnft-dkOQ&callback=initMap"
+          ></script>
         </div>
-        <div class="right"></div>
+        <div class="right-contact"></div>
       </section>
 
       <footer class="footer">
