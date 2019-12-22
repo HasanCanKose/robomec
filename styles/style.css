@@ -140,7 +140,7 @@ body {
 .info p {
   grid-area: p1;
   font-size: large;
-  line-height: x-large;
+  line-height: 25px;
   text-align: justify;
 }
 .boxes {
@@ -160,7 +160,6 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   font-size: x-large;
-  line-height: xx-large;
   text-align: center;
   color: var(--dark);
 }
@@ -224,6 +223,7 @@ body {
   box-shadow: var(--shadow);
   padding: 1.5rem 0.5rem;
   border-radius: 5px;
+  line-height: 25px;
 }
 .location img {
   padding: 0;
@@ -259,6 +259,7 @@ body {
   box-shadow: var(--shadow);
   padding: 1.5rem 0.5rem;
   border-radius: 5px;
+  line-height: 25px;
 }
 .footer-img {
   background: var(--dark);
@@ -325,7 +326,7 @@ body {
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
   font-size: large;
-  line-height: xx-large;
+  line-height: 25px;
   text-align: justify;
 }
 .mission {
@@ -335,7 +336,7 @@ body {
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
   font-size: large;
-  line-height: xx-large;
+  line-height: 25px;
   text-align: justify;
 }
 .vision {
@@ -345,7 +346,7 @@ body {
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
   font-size: large;
-  line-height: xx-large;
+  line-height: 25px;
   text-align: justify;
 }
 /* About page */
@@ -356,8 +357,49 @@ body {
   grid-template-columns: 10% 80% 10%;
   margin: 50px 0;
 }
-
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  grid-gap: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+.contact-adress {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: large;
+}
+.contact-mail {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: large;
+}
+.contact-phone {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: large;
+}
 /* Contact page */
+/* Product page */
+.product {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+.product-mid {
+  margin: 50px 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Product page */
 @media (max-width: 950px) {
   .icons {
     margin: 0;
