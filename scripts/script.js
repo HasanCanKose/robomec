@@ -23,7 +23,7 @@ function smoothScroll(target, duration) {
   requestAnimationFrame(animation);
 }
 
-// let section = document.getElementById("start").innerHTML;
+// let section = document.querySelector(".start");
 
 // section.addEventListener("click", function() {
 //   smoothScroll("end", 1000);
