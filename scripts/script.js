@@ -1,6 +1,6 @@
 function smoothScroll() {
-  let targett = document.querySelector(".end");
-  let targetPosition = targett.getBoundingClientRect().top;
+  let target = document.querySelector(".end");
+  let targetPosition = target.getBoundingClientRect().top;
   let startPosition = window.pageYOffset;
   var distance = targetPosition - startPosition;
   let startTime = null;
@@ -24,24 +24,32 @@ function smoothScroll() {
   requestAnimationFrame(animation);
 }
 
-// let section = document.querySelector(".start");
+function removeFragment() {
+  history.pushState("", document.title, window.location.pathname);
+}
 
-// if (
-//   section.addEventListener("click", function() {
-//     section.addEventListener("DOMContentLoaded", function() {
-//       return false;
-//     });
-//   })
-// ) {
-//   smoothScroll();
-// }
+function isFragment() {
+  return window.location.hash === "#start";
+}
 
-// document.getElementById("start").addEventListener("click", function() {
-//   smoothScroll("end", 1000);
-// });
+function isSamePathName(element) {
+  return window.location.pathname === element.pathname;
+}
 
-// section.addEventListener("click", function() {
-//   window.onload = smoothScroll;
-// });
+if (isFragment) {
+  removeFragment();
+  smoothScroll();
+}
 
-smoothScroll();
+let elements = document.querySelectorAll(".start");
+
+elements.forEach(element => {
+  element.addEventListener("click", function(event) {
+    if (isSamePathName(element)) {
+      event.preventDefault();
+    }
+    smoothScroll();
+    removeFragment();
+    console.log(element);
+  });
+});
