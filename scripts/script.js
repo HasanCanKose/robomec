@@ -36,7 +36,7 @@ function isSamePathName(element) {
   return window.location.pathname === element.pathname;
 }
 
-if (isFragment) {
+if (isFragment()) {
   removeFragment();
   smoothScroll();
 }
