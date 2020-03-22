@@ -1,9 +1,10 @@
-function smoothScroll(target, duration) {
-  let targett = document.getElementById(target);
+function smoothScroll() {
+  let targett = document.querySelector(".end");
   let targetPosition = targett.getBoundingClientRect().top;
   let startPosition = window.pageYOffset;
   var distance = targetPosition - startPosition;
   let startTime = null;
+  let duration = 1000;
 
   function animation(currenTime) {
     if (startTime === null) startTime = currenTime;
@@ -25,12 +26,22 @@ function smoothScroll(target, duration) {
 
 // let section = document.querySelector(".start");
 
-// section.addEventListener("click", function() {
-//   smoothScroll("end", 1000);
-// });
+// if (
+//   section.addEventListener("click", function() {
+//     section.addEventListener("DOMContentLoaded", function() {
+//       return false;
+//     });
+//   })
+// ) {
+//   smoothScroll();
+// }
 
 // document.getElementById("start").addEventListener("click", function() {
 //   smoothScroll("end", 1000);
 // });
 
-smoothScroll("end", 1000);
+// section.addEventListener("click", function() {
+//   window.onload = smoothScroll;
+// });
+
+smoothScroll();
