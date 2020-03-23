@@ -50,6 +50,5 @@ elements.forEach(element => {
     }
     smoothScroll();
     removeFragment();
-    console.log(element);
   });
 });
