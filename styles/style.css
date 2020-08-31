@@ -489,6 +489,13 @@ body {
     grid-column: 2/5;
     padding: 1.5rem 2rem;
   }
+  .end p {
+    text-align: left;
+    font-size: 15px;
+  }
+  .mid p {
+    text-indent: 0px;
+  }
 }
 @media (min-width: 601px) and (max-width: 655px) {
   .main-nav ul {
