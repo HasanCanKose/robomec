@@ -139,9 +139,13 @@ body {
 }
 .info p {
   grid-area: p1;
-  font-size: large;
+  font-size: 18px;
   line-height: 25px;
   text-align: justify;
+}
+.info ul {
+  font-size: 18px;
+  line-height: 25px;
 }
 .boxes {
   display: grid;
@@ -325,7 +329,7 @@ body {
   box-shadow: var(--shadow);
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  font-size: large;
+  font-size: 18px;
   line-height: 25px;
   text-align: justify;
 }
@@ -335,7 +339,7 @@ body {
   box-shadow: var(--shadow);
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  font-size: large;
+  font-size: 18px;
   line-height: 25px;
   text-align: justify;
 }
@@ -345,7 +349,7 @@ body {
   box-shadow: var(--shadow);
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  font-size: large;
+  font-size: 18px;
   line-height: 25px;
   text-align: justify;
 }
@@ -370,21 +374,21 @@ body {
   box-shadow: var(--shadow);
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  font-size: large;
+  font-size: 18px;
 }
 .contact-mail {
   background: var(--primary);
   box-shadow: var(--shadow);
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  font-size: large;
+  font-size: 18px;
 }
 .contact-phone {
   background: var(--primary);
   box-shadow: var(--shadow);
   padding: 1.5rem 1.5rem;
   border-radius: 5px;
-  font-size: large;
+  font-size: 18px;
 }
 /* Contact page */
 /* Product page */
@@ -488,13 +492,29 @@ body {
   .phone {
     grid-column: 2/5;
     padding: 1.5rem 2rem;
+    font-size: 16px;
+  }
+  .phone img {
+    height: 30px;
   }
   .end p {
     text-align: left;
     font-size: 15px;
   }
+  .info ul {
+    font-size: 15px;
+  }
   .mid p {
     text-indent: 0px;
+  }
+  .info-img {
+    display: none;
+  }
+  .contact-mail p {
+    text-align: center;
+  }
+  .contact-phone p {
+    text-align: center;
   }
 }
 @media (min-width: 601px) and (max-width: 655px) {
