@@ -405,8 +405,7 @@ body {
   grid-gap: 30px;
 }
 
-.horizontal {
-  border: 0;
+#horizontal {
   width: 100%;
   background: linear-gradient(
     to right,
@@ -531,6 +530,9 @@ body {
   }
   .contact-phone p {
     text-align: center;
+  }
+  .product-mid .product-title {
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 601px) and (max-width: 655px) {
