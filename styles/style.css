@@ -50,14 +50,16 @@ body {
   margin: 0;
   padding: 0;
 }
-.icons {
+.main-nav ul .languages {
   display: grid;
   padding: 0;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 50% 50%;
   grid-gap: 0px;
-  margin: 0 50px;
-  /* 
-  border: 2px solid green; */
+  margin-left: 100px;
+  width: 36%;
+}
+.main-nav ul .languages p{
+  color: #ccc;
 }
 .fa {
   transition: all 0.1s ease-out;
