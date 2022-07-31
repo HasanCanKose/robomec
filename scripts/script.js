@@ -8,7 +8,6 @@ function smoothScroll() {
 
   function animation(currenTime) {
     if (startTime === null) startTime = currenTime;
-    console.log(startTime);
     let timeElapsed = currenTime - startTime;
     let run = ease(timeElapsed, startPosition, distance, duration);
     window.scrollTo(0, run);

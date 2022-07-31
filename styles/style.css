@@ -294,6 +294,17 @@ body {
   font-size: 22px;
   opacity: 0.8;
 }
+
+.footer-languages {
+  grid-column: 7/7;
+  grid-row: 2/3;
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  color: #ccc;
+}
+
 .copy-right {
   background: black;
   grid-column: 1/6;
@@ -422,7 +433,7 @@ body {
 
 /* Product page */
 @media (max-width: 950px) {
-  .icons {
+  .main-nav ul .languages {
     margin: 0;
   }
   .main-nav a {
@@ -445,7 +456,7 @@ body {
   .main-nav ul {
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   }
-  .icons {
+  .main-nav ul .languages {
     display: none;
   }
   .info {
